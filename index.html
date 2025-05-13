@@ -16,7 +16,20 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+<!-- tailwind script v-3.4.17 -->
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-clr': '#ABEF5F',
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 <style>
     .manrope-font {
   font-family: "Manrope", sans-serif;
@@ -25,6 +38,86 @@
 
 </head>
 <body> 
-    <h2 class="text-3xl manrope-font">sabikun nahar jubly</h2>
+    <header class="max-w-[1170px] mx-auto">
+      <!-- navber  -->
+        <div class="navbar justify-between bg-base-100">
+          <!-- logo -->
+  <div class="navbar-start gap-2">
+    <div class="">
+        <button class=" bg-btn-clr btn-circle"><i class="fa-solid fa-arrow-right-long font-semibold  -rotate-45"></i></button>
+    </div>
+ <a class=" text-3xl font-bold">Rinterio</a>
+  </div>
+  <!-- manu bar -->
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a> Blogs</a></li>
+          <li><a>Contact Us </a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-end gap-5 hidden lg:flex ">
+    <!-- search btn -->
+         <div class="">
+        <button class="btn-circle bg-[#FFFFFF] shadow-md"><i class="fa-solid fa-magnifying-glass text-slate-500"></i></button>
+    </div>
+    <!-- cart btn -->
+         <div class="">
+        <button class="btn-circle bg-[#FFFFFF] shadow-md"><i class="fa-solid fa-cart-shopping text-slate-500"></i></button>
+    </div>
+    <a class="btn bg-btn-clr rounded-full text-xl font-semibold  ">Book Consult <i class="fa-solid fa-arrow-right-long font-semibold -rotate-45 bg-[#1C1C1C] rounded-full p-2 text-white"></i></a>
+    
+  </div>
+  <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  w-52 p-2 shadow hidden">
+                  <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a> Blogs</a></li>
+          <li><a>Contact Us </a></li>
+      </ul>
+    </div>
+</div>
+
+    <!-- banner section  -->
+      <div class="hero">
+   <div class="hero-content text-center">
+    <div class=" space-y-7">
+      <img class="w-[570px] mx-auto" src="assets/banner.png" alt="">
+      <h1 class="text-4xl lg:text-5xl font-bold lg:w-[]">A barn house of this design  has a <br>striking appearance</h1>
+      <p class=" text-[#494949]">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek <br> metal accents, and large windows that flood the space with natural light.
+      </p>
+      <button> <a class="btn bg-[#c1f684] rounded-full text-xl font-semibold  ">View Details <i class="fa-solid fa-arrow-right-long font-semibold -rotate-45 bg-btn-clr rounded-full shadow p-2 text-white"></i></a></button>
+    </div>
+  </div>
+</div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
 </html>
